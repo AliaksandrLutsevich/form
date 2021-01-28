@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Form |</title>
+</head>
+
+<body>
+    <header style="font-family: Segoe Ui;">
+        <h2>What a beauftiful form</h2>
+        <hr>
+    </header>
+    <main style="font-family: Arial Narrow;">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <h4>Username:*</h4>
+                <input tabindex="1" placeholder="Enter your name" type="text" name="username" maxlength="30"
+                    minlength="1" required="required" />
+            </div>
+            <div>
+                <h4>Phone number:*</h4>
+                +375<input tabindex="2" placeholder="(29)111-11-11" type="tel" name="phonenumber" minlength="9"
+                    maxlength="9" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required="required" />
+            </div>
+            <div>
+                <h4>Email:</h4>
+                <input tabindex="3" placeholder="Enter your email" type="text" name="useremail" maxlength="90" />
+            </div>
+            <div>
+                <h4>Password:*</h4>
+                <input tabindex="4" placeholder="Create a password" type="password" name="password"
+                    required="required" />
+            </div>
+            <div>
+                <h4>Is it your first registration on our website?</h4>
+                <p><input tabindex="5" checked type="radio" name="first-visit" value="Yes" />Yes</p>
+                <p><input tabindex="5" type="radio" name="first-visit" value="No" />No</p>
+            </div>
+            <div>
+                <h4>Would you recommend our website to your friends?</h4>
+                <p><input tabindex="6" checked type="radio" name="recommendation" value="Yes" />Yes</p>
+                <p><input tabindex="6" type="radio" name="recommendation" value="Maybe" />Maybe</p>
+                <p><input tabindex="6" type="radio" name="recommendation" value="No" />No</p>
+            </div>
+            <div>
+                <h4>Add a few words about yourself:</h4>
+                <textarea placeholder="Once upon a time I ..." tabindex="7" name="feedback" cols="30" rows="10"
+                    maxlength="250"></textarea>
+            </div>
+            <h4>How often do you plan to use our website?</h4>
+            <select tabindex="8" name="how-often">
+                <option value="always">every day</option>
+                <option value="often">several times a week</option>
+                <option value="sometimes">several times a month</option>
+                <option value="rarely">several times a year</option>
+            </select>
+            <br>
+            <br>
+            <div>
+                <p> <input tabindex="9" checked type="checkbox" name="news" value="yes" /> Subscribe to our newsletter
+                </p>
+            </div>
+            <br>
+            <div>
+                <button style="background-color: green; font-size: 1em; height:30px; width:100px" tabindex="10"
+                    type="submit">Submit</button>
+                <button style="background-color: red; font-size: 1em; height:30px; width:100px" tabindex="11"
+                    type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
